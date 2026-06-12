@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RequiemGames - Tienda de Videojuegos</title>
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header">
+    <div class="header-top">
+      <!-- Logo de la marca -->
+      <div class="logo">
+        <span class="logo-icon">🎮</span>
+        <span class="logo-text">Requiem<span class="logo-highlight">Games</span></span>
+      </div>
+
+      <!-- Buscador integrado -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar videojuegos..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <!-- Carrito (botón con contador dinámico) -->
+      <button id="cartBtn" class="cart-button">
+        🛒 Carrito
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-menu">
+      <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+      <a href="#catalogo" class="nav-link" data-section="catalogo">Catálogo</a>
+      <a href="#destacados" class="nav-link" data-section="destacados">Destacados</a>
+      <a href="#" class="nav-link" id="navCarrito">Carrito</a>
+    </nav>
+  </header>
+
+  <!-- ============================ MAIN ============================ -->
+  <main>
+
+    <!-- ---------- SECCIÓN INICIO / HERO ---------- -->
+    <section id="inicio" class="hero">
+      <h1>Bienvenido a <span class="logo-highlight">RequiemGames</span></h1>
+      <p>Tu tienda de videojuegos físicos y digitales. Las mejores ofertas, los mejores títulos.</p>
+    </section>
+
+    <!-- ---------- SECCIÓN DESTACADOS ---------- -->
+    <section id="destacados" class="section">
+      <h2 class="section-title">🔥 Juegos Destacados</h2>
+      <div id="destacadosContainer" class="cards-container">
+        <!-- Las tarjetas de juegos destacados se generan dinámicamente con JS -->
+      </div>
+    </section>
+
+    <!-- ---------- SECCIÓN CATÁLOGO ---------- -->
+    <section id="catalogo" class="section">
+      <h2 class="section-title">🎯 Catálogo Completo</h2>
+
+      <!-- Filtros de búsqueda -->
+      <div class="filters">
+        <div class="filter-group">
+          <label for="filterPlataforma">Plataforma:</label>
+          <select id="filterPlataforma">
+            <option value="todas">Todas</option>
+            <!-- Opciones generadas dinámicamente -->
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filterTipo">Tipo:</label>
+          <select id="filterTipo">
+            <option value="todos">Todos</option>
+            <option value="Físico">Físico</option>
+            <option value="Digital">Digital</option>
+          </select>
+        </div>
+
+        <button id="resetFilters" class="btn-secondary">Limpiar filtros</button>
+      </div>
+
+      <!-- Contenedor donde se renderizan las tarjetas del catálogo -->
+      <div id="catalogoContainer" class="cards-container">
+        <!-- Generado dinámicamente con JS -->
+      </div>
+
+      <!-- Mensaje cuando no hay resultados -->
+      <p id="noResults" class="no-results" style="display:none;">
+        No se encontraron juegos que coincidan con la búsqueda.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ============================ CARRITO (MODAL LATERAL) ============================ -->
+  <div id="cartOverlay" class="cart-overlay"></div>
+
+  <aside id="cartPanel" class="cart-panel">
+    <div class="cart-header">
+      <h2>🛒 Tu Carrito</h2>
+      <button id="closeCart" class="close-btn">✖</button>
+    </div>
+
+    <!-- Lista de productos en el carrito -->
+    <div id="cartItems" class="cart-items">
+      <!-- Generado dinámicamente con JS -->
+    </div>
+
+    <!-- Resumen del carrito -->
+    <div class="cart-summary">
+      <div class="cart-summary-row">
+        <span>Cantidad de productos:</span>
+        <span id="cartTotalItems">0</span>
+      </div>
+      <div class="cart-summary-row cart-total">
+        <span>Total a pagar:</span>
+        <span id="cartTotalPrice">$0</span>
+      </div>
+
+      <button id="clearCartBtn" class="btn-secondary">Vaciar carrito</button>
+      <button id="checkoutBtn" class="btn-primary">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <!-- ============================ MODAL DE CONFIRMACIÓN DE COMPRA ============================ -->
+  <div id="confirmOverlay" class="confirm-overlay">
+    <div class="confirm-box">
+      <h2>✅ ¡Compra realizada!</h2>
+      <p>¡Gracias por comprar en RequiemGames!</p>
+      <button id="closeConfirm" class="btn-primary">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <p>© 2026 RequiemGames</p>
+    <p>Trabajo práctico de Algoritmos y Estructuras de Datos</p>
+  </footer>
+
+  <!-- Script principal con toda la lógica de la aplicación -->
+  <script src="script.js"></script>
+</body>
+</html>
