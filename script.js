@@ -23,7 +23,7 @@ const catalogoJuegos = [
     genero: "Survival Horror",
     precio: 69999,
     stock: 15,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co9p0t.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/3764200/library_600x900.jpg",
     destacado: true
   },
   {
@@ -34,7 +34,7 @@ const catalogoJuegos = [
     genero: "RPG / Acción",
     precio: 45999,
     stock: 30,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900.jpg",
     destacado: true
   },
   {
@@ -45,7 +45,7 @@ const catalogoJuegos = [
     genero: "RPG / Souls-like",
     precio: 59999,
     stock: 12,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg",
     destacado: true
   },
   {
@@ -56,7 +56,7 @@ const catalogoJuegos = [
     genero: "Acción / RPG",
     precio: 52999,
     stock: 20,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co6x94.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/2358720/library_600x900.jpg",
     destacado: true
   },
   {
@@ -67,7 +67,7 @@ const catalogoJuegos = [
     genero: "Acción / Mundo Abierto",
     precio: 39999,
     stock: 18,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg",
     destacado: false
   },
   {
@@ -78,7 +78,7 @@ const catalogoJuegos = [
     genero: "Acción / Mundo Abierto",
     precio: 29999,
     stock: 25,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/271590/library_600x900.jpg",
     destacado: false
   },
   {
@@ -89,7 +89,7 @@ const catalogoJuegos = [
     genero: "RPG por turnos",
     precio: 44999,
     stock: 22,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co8mfh.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/1903340/library_600x900.jpg",
     destacado: false
   },
   {
@@ -100,7 +100,7 @@ const catalogoJuegos = [
     genero: "RPG / Aventura",
     precio: 34999,
     stock: 17,
-    imagen: "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg",
+    imagen: "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900.jpg",
     destacado: false
   }
 ];
